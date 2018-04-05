@@ -7,9 +7,8 @@ class App extends Component {
 
   submitJson = () => {
     const dbRef = firebase.database().ref()
-    const newDataRef = dbRef.push();
     const categories = JSON.parse(this.state.value)
-    newDataRef.set(categories)
+    dbRef.set(categories)
     console.log("Must've worked!")
   }
 
