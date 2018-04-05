@@ -21,6 +21,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h3>Use with the utmost care!</h3>
+        <h4>That had better be valid json...</h4>
         <div>
           <textarea onChange={this.handleTextInput} value={this.state.value} rows="15" cols="50">
           </textarea>
